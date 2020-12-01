@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Mark Twain</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">
+        Who Was Mark Twain?\n\n
+        Mark Twain, whose real name was Samuel Clemens, was the celebrated author of several novels,
+        including two major classics of American literature: The Adventures of Tom Sawyer and
+        Adventures of Huckleberry Finn. He was also a riverboat pilot, journalist, lecturer,
+        entrepreneur and inventor.
+        \n\n\n\nEarly Life\n\n
+        Twain was born Samuel Langhorne Clemens in the tiny village of Florida, Missouri,
+        on November 30, 1835, the sixth child of John and Jane Clemens. When he was 4 years old,
+        his family moved to nearby Hannibal, a bustling river town of 1,000 people.
+        \n\nJohn Clemens worked as a storekeeper, lawyer, judge and land speculator,
+        dreaming of wealth but never achieving it, sometimes finding it hard to feed his family.
+        He was an unsmiling fellow; according to one legend, young Sam never saw his father laugh.
+        \n\nHis mother, by contrast, was a fun-loving, tenderhearted homemaker who whiled away
+        many a winter\'s night for her family by telling stories. She became head of the household
+        in 1847 when John died unexpectedly.
+    </string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="done">Done</string>
+</resources>
