@@ -79,17 +79,18 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
             onDessertClicked()
         }
 
+        dessertTimer = DessertTimer(this.lifecycle)
+
         if(savedInstanceState != null){
             revenue = savedInstanceState.getInt(KEY_REVENUE)
             dessertsSold = savedInstanceState.getInt(KEY_SOLD)
-//            dessertTimer.secondsCount = savedInstanceState.getInt(KEY_TIMER)
+            dessertTimer.secondsCount = savedInstanceState.getInt(KEY_TIMER)
         }
 
         // Set the TextViews to the right values
         binding.revenue = revenue
         binding.amountSold = dessertsSold
 
-        dessertTimer = DessertTimer(this.lifecycle)
         // Make sure the correct dessert is showing
         binding.dessertButton.setImageResource(currentDessert.imageId)
 //        Log.i("Main Activity", "onCreate called")
@@ -167,7 +168,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         super.onSaveInstanceState(outState)
         outState.putInt(KEY_REVENUE, revenue)
         outState.putInt(KEY_SOLD, dessertsSold)
-//        outState.putInt(KEY_TIMER, dessertTimer.secondsCount)
+        outState.putInt(KEY_TIMER, dessertTimer.secondsCount)
         Timber.i("onSaveInstanceState created")
     }
 
